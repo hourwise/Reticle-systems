@@ -14,7 +14,8 @@
 
 # Service account files
 service-account*.json
-supabase-service-role*.json
+firebase-service-account*.json
+firebase-adminsdk*.json
 
 # Build outputs
 dist
@@ -65,8 +66,9 @@ Thumbs.db
 # package-lock.json
 # yarn.lock
 
-# Supabase
-.supabase
-supabase/.branches
-supabase/.temp
+# Firebase
+.firebase
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
 
