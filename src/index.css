@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 3.9%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 3.9%;
+  --ring: 0 0% 83.1%;
+
+  --radius: 0.5rem;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* HAL-inspired aesthetic */
+.hal-text {
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.typewriter {
+  animation: typewriter-effect 0.1s steps(1);
+}
+
+@keyframes typewriter-effect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Minimal dark interface */
+.hal-button {
+  @apply px-6 py-3 border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors;
+}
+
+.hal-button:hover {
+  @apply cursor-pointer;
+}
+
+/* Response grid styling */
+.response-grid {
+  @apply grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3;
+}
+
+/* Report card styling */
+.report-card {
+  @apply border border-border bg-card p-6 rounded-lg;
+}
+
+.report-section-title {
+  @apply text-lg font-semibold text-foreground mb-4 tracking-wider;
+}
+
