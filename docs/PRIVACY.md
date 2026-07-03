@@ -4,7 +4,7 @@
 
 ## Overview
 
-BuildProof ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and otherwise handle your information when you use our website and services.
+Reticle Systems ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and otherwise handle your information when you use our website and services.
 
 ## Information We Collect
 
@@ -25,7 +25,7 @@ BuildProof ("we," "our," or "us") is committed to protecting your privacy. This 
 We use collected information to:
 
 1. Provide services: run audits and generate reports.
-2. Improve products: understand how users interact with BuildProof.
+2. Improve products: understand how users interact with Reticle Systems.
 3. Communicate: send important service updates or security alerts.
 4. Protect the service: detect and prevent fraud or abuse.
 5. Comply with legal and regulatory obligations.
@@ -146,7 +146,7 @@ We may update this Privacy Policy periodically. We will notify you of material c
 
 For privacy questions or to exercise your rights:
 
-**Email:** privacy@buildproof.com
+**Email:** privacy@reticle.systems
 **Mailing Address:** [Your Address]
 **Data Protection Officer:** [Contact if applicable]
 

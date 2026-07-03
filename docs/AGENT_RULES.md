@@ -1,4 +1,4 @@
-﻿# AI Coding Agent Rules for BuildProof
+﻿# AI Coding Agent Rules for Reticle Systems
 
 Every AI coding agent must follow these rules to ensure code quality, security, and alignment with the build plan.
 
@@ -123,4 +123,4 @@ If you violate these rules:
 - [ ] Documentation is updated.
 - [ ] Security review passed.
 
-These rules are non-negotiable. Violations undermine the core promise of BuildProof: to be safer than the projects it audits.
+These rules are non-negotiable. Violations undermine the core promise of Reticle Systems: to be safer than the projects it audits.

@@ -1,10 +1,12 @@
-﻿# BuildProof
+﻿# Reticle Systems
 
 > Build fast. Launch safely.
 
+**AI Assistant: O.D.I.N. (Optical Diagnostic & Inspection Network)**
+
 Launch readiness and security audit platform for AI-built applications.
 
-BuildProof helps non-technical founders and AI-assisted builders move from idea to launch with safer code, clearer structure, and better growth plans.
+Reticle Systems helps non-technical founders and AI-assisted builders move from idea to launch with safer code, clearer structure, and better growth plans.
 
 ## Quick Start
 
@@ -20,7 +22,7 @@ BuildProof helps non-technical founders and AI-assisted builders move from idea 
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd buildproof
+cd reticle-systems
 
 # Install dependencies
 npm install
@@ -50,7 +52,7 @@ npm run preview
 ## Project Structure
 
 ```text
-buildproof/
+reticle-systems/
   src/
     components/
     pages/
@@ -139,7 +141,7 @@ buildproof/
 
 ## Security
 
-BuildProof must be safer than the projects it audits.
+Reticle Systems must be safer than the projects it audits.
 
 See [SECURITY.md](docs/SECURITY.md) for detailed security policies and requirements.
 
@@ -181,7 +183,7 @@ GITHUB_APP_PRIVATE_KEY=your-github-private-key
 - [Security Policy](docs/SECURITY.md) - Security requirements and policies
 - [Privacy Policy](docs/PRIVACY.md) - User data handling
 - [Agent Rules](docs/AGENT_RULES.md) - Rules for AI coding agents
-- [Source of Truth Build Plan](BuildProof_Source_of_Truth_Build_Plan.md) - Complete product specification
+- [Source of Truth Build Plan](BuildProof_Source_of_Truth_Build_Plan.md) - Complete product specification for Reticle Systems
 
 ## Contributing
 
@@ -195,4 +197,4 @@ Before implementing features:
 
 ## Disclaimer
 
-BuildProof provides automated risk assessment and remediation guidance. It does not guarantee that your product is secure and is not a substitute for professional penetration testing, legal advice, or compliance review.
+Reticle Systems provides automated risk assessment and remediation guidance. It does not guarantee that your product is secure and is not a substitute for professional penetration testing, legal advice, or compliance review.

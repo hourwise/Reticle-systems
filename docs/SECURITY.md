@@ -1,8 +1,8 @@
-﻿# Security Policy for BuildProof
+﻿# Security Policy for Reticle Systems
 
 ## Non-Negotiable Principle
 
-BuildProof must be safer than the projects it audits.
+Reticle Systems must be safer than the projects it audits.
 
 If the platform ever exposes keys, bypasses Firebase Security Rules, trusts frontend payment state, stores raw code unnecessarily, or produces unvalidated AI output, it has failed its own core promise.
 
@@ -219,4 +219,4 @@ If a security issue is discovered:
 - Only use data as described in the privacy policy.
 
 **Last updated:** June 2026
-**Owner:** BuildProof Security Team
+**Owner:** Reticle Systems Security Team

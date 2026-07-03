@@ -1,7 +1,8 @@
-# BuildProof / ShipSafe AI — Source of Truth Build Plan
+# Reticle Systems — Source of Truth Build Plan
 
-**Working product names:** BuildProof, ShipSafe AI, LaunchGuard AI, PromptProof, VibeShield  
-**Preferred working name for this plan:** BuildProof  
+**Product:** Reticle Systems
+**AI Assistant:** O.D.I.N. (Optical Diagnostic & Inspection Network)
+**Former working names:** BuildProof, ShipSafe AI, LaunchGuard AI, PromptProof, VibeShield
 **Core promise:** Help non-technical and AI-assisted builders move from idea to launch with safer code, clearer structure, and better growth plans.
 
 ---
@@ -10,7 +11,7 @@
 
 AI coding tools let people create apps quickly, but many founders and creators do not understand the security, scalability, maintainability, SEO, or marketing weaknesses inside what they have built.
 
-BuildProof provides a guided, minimal, non-chat interface that:
+Reticle Systems provides a guided, minimal, non-chat interface that:
 
 1. Checks AI-built projects before or after launch.
 2. Detects common security and structural problems.
@@ -22,6 +23,31 @@ BuildProof provides a guided, minimal, non-chat interface that:
 The product should feel like a calm diagnostic system, not a chatbot.
 
 **Interface inspiration:** HAL-style, minimal, dark, typewriter text, clickable answers, guided flow, no open chat box.
+
+### 1a. Our Mission
+
+Not to scan code.
+
+To create better software builders.
+
+The product should educate users throughout their journey, gradually introducing professional software engineering practices without overwhelming beginners. Every feature should answer one question:
+
+> "Does this make someone a better software builder?"
+
+If not, it probably does not belong in Reticle Systems.
+
+### 1b. Our Philosophy
+
+O.D.I.N. is not an AI report generator.
+
+It is an AI development mentor.
+
+Every interaction should answer one of four questions:
+
+1. **What is wrong?** — identify the issue clearly.
+2. **Why does it matter?** — explain the impact in plain English.
+3. **How do I fix it?** — provide actionable repair guidance.
+4. **What should I learn next?** — guide the user's growth as a builder.
 
 ---
 
@@ -37,15 +63,41 @@ The product should feel like a calm diagnostic system, not a chatbot.
 
 ### What the product is
 
-BuildProof is an automated launch-readiness and growth advisory platform for AI-assisted builders.
+Reticle Systems is an automated launch-readiness and growth advisory platform for AI-assisted builders, powered by O.D.I.N.
 
 ### What the product is not
 
-BuildProof is not a guarantee that a product is secure. It is not a replacement for formal penetration testing, legal advice, or professional security review.
+Reticle Systems is not a guarantee that a product is secure. It is not a replacement for formal penetration testing, legal advice, or professional security review.
 
 Always include wording similar to:
 
-> BuildProof provides automated risk assessment and remediation guidance. It does not guarantee that your product is secure and is not a substitute for professional penetration testing, legal advice, or compliance review.
+> Reticle Systems provides automated risk assessment and remediation guidance. It does not guarantee that your product is secure and is not a substitute for professional penetration testing, legal advice, or compliance review.
+
+### 2a. Brand Personality
+
+Reticle Systems should feel:
+
+- **Calm** — never alarmist or fear-based.
+- **Accurate** — precision over drama.
+- **Professional** — trustworthy, not salesy.
+- **Helpful** — focused on enabling the user.
+- **Educational** — every interaction teaches something.
+
+Never dramatic. Never fear-based. Never salesy.
+
+### 2b. Trust First
+
+O.D.I.N. never exaggerates findings.
+
+Instead of:
+
+> "You have a SQL Injection vulnerability."
+
+Say:
+
+> "We detected a pattern consistent with a potential SQL injection vulnerability that requires verification."
+
+Accuracy is always more important than conversions. The product builds trust through measured, precise language — not through inflating risk to drive purchases.
 
 ---
 
@@ -68,19 +120,74 @@ Always include wording similar to:
 
 ---
 
-## 4. Core Product Stages
+## 4. Core Product Stages (The Reticle Journey)
 
-The long-term product has five stages.
+The long-term product journey has eight stages:
 
 ```text
 1. Discover an idea
 2. Plan the build
 3. Audit the project
 4. Repair the weaknesses
-5. Grow the product
+5. Verify the fixes
+6. Professionalise the project
+7. Launch with confidence
+8. Grow the product
 ```
 
-The MVP should start with stages 3, 4, and a basic version of 5.
+This replaces the simpler scan → report → leave model with a continuous journey. Every feature should fit somewhere in this journey.
+
+The MVP should start with stages 3, 4, 5, and a basic version of 8.
+
+### 4a. Professionalisation — A Unique Selling Point
+
+One of Reticle Systems' differentiators: rather than assuming users understand Git, CI/CD, or deployments, O.D.I.N. teaches these concepts at the appropriate time — after critical issues are resolved.
+
+**Professionalisation roadmap:**
+
+| Level | Milestone |
+|-------|-----------|
+| **Level 1** | Downloaded a project from Lovable/Bolt/etc. |
+| **Level 2** | Stored project in GitHub |
+| **Level 3** | Security issues resolved |
+| **Level 4** | Automatic monitoring enabled |
+| **Level 5** | Production-ready application |
+
+Users should feel they are progressing as software creators, not just receiving a one-time report.
+
+### 4b. Verification Mode
+
+Every finding should include a verification loop:
+
+```text
+"I've fixed it."
+     ↓
+  Rescan
+     ↓
+  Confirmed ✓
+     ↓
+Score increases
+```
+
+Positive reinforcement should be shown when fixes are verified. This builds trust and encourages users to continue improving their projects.
+
+### 4c. Our Competitive Advantage
+
+Most competitors:
+
+- Produce reports.
+- Generate AI text.
+- Stop.
+
+O.D.I.N. continues after the report. It helps users:
+
+- ✓ fix
+- ✓ verify
+- ✓ improve
+- ✓ monitor
+- ✓ learn
+
+The product is not a scanner — it is a development mentor that stays with the user through their entire builder journey.
 
 ---
 
@@ -126,6 +233,28 @@ The MVP should start with stages 3, 4, and a basic version of 5.
 - “Paste this into Codex” repair prompts.
 - “Paste this into Lovable/Bolt/etc.” safe improvement prompts.
 - Growth suggestions after technical issues are fixed.
+
+### Free vs Paid Report Strategy
+
+**The Free Report** should answer only:
+
+> "Is there a problem?"
+
+Not:
+
+> "What exactly is wrong?"
+
+Display: launch score, security score, SEO score, growth score, issue counts, and categories. No implementation details.
+
+**The Paid Report** reveals everything required to fix the project:
+
+- Repair prompts tailored to the user's builder.
+- Code explanations in plain English.
+- Verification checklist.
+- Architecture suggestions.
+- Growth advice and next steps.
+
+This tiered approach builds trust through the free report while creating clear value for the paid tier.
 
 ---
 
@@ -204,7 +333,53 @@ Important: Avoid positioning this as “scraping Reddit”. Use permitted APIs, 
 - Product feedback analysis.
 - Competitor change tracking.
 - Monthly growth recommendations.
-- “What to build next” report.
+- "What to build next" report.
+
+### Phase 6 — GitHub Migration Assistant
+
+After critical issues are resolved, recommend moving the project into GitHub.
+
+Provide:
+
+- Builder-specific export guides (Lovable, Bolt, Replit, etc.).
+- GitHub Desktop setup guide.
+- Repository creation and initial commit guide.
+- Connect Reticle Systems for automatic monitoring.
+
+This unlocks:
+
+- Automatic scans on every push.
+- Continuous monitoring.
+- Historical score comparisons.
+- Weekly progress reports.
+
+### Phase 7 — Reticle Labs
+
+Publish regular industry reports to position Reticle Systems as an authority and drive organic SEO:
+
+- Top AI coding mistakes (monthly).
+- Builder comparison reports (Lovable vs Bolt vs Cursor, etc.).
+- Weekly security trends for AI-built software.
+- State of AI-built software (annual).
+- Common vulnerability patterns in vibe-coded projects.
+
+These reports serve dual purpose: educating the community and attracting new users through organic discovery.
+
+### Phase 8 — Long-Term Vision: Development Operating System
+
+Eventually Reticle Systems becomes a development operating system, not merely a scanner.
+
+Advisor capabilities:
+
+- **Security Advisor** — continuous vulnerability detection and remediation.
+- **Architecture Advisor** — structural guidance for scaling projects.
+- **SEO Advisor** — ongoing visibility optimisation.
+- **Growth Advisor** — launch strategy and marketing guidance.
+- **Deployment Advisor** — production readiness and CI/CD setup.
+- **Accessibility Advisor** — inclusive design checks.
+- **Marketing Advisor** — content strategy and audience growth.
+
+Each advisor acts as a specialised module within the platform, accessible as the user progresses through the professionalisation levels.
 
 ---
 
@@ -320,6 +495,25 @@ Firebase service account credentials and Admin SDK privileges must not be used i
 - Large clickable response buttons
 - No open chatbot box
 - No technical overwhelm
+
+### Website Design Principles
+
+**Avoid:**
+
+- ❌ AI gradients
+- ❌ Floating glass cards
+- ❌ "Powered by AI" badges
+- ❌ Generic SaaS layouts
+
+**Instead create:**
+
+- ✓ Industrial
+- ✓ Diagnostic
+- ✓ Mission control
+- ✓ Minimal
+- ✓ Trustworthy
+
+**Think:** Apple diagnostics, HAL, Flight control, Professional engineering equipment.
 
 ### Example flow
 
@@ -1045,7 +1239,7 @@ Only Firebase web app config values with the `VITE_FIREBASE_*` prefix may be exp
 ## 17. Suggested Folder Structure
 
 ```text
-buildproof/
+reticle-systems/
   apps/
     web/
       src/
@@ -1102,48 +1296,51 @@ buildproof/
 
 ## 18. Build Phases
 
-### Phase 0 — Setup and guardrails
+### Phase 0 — Setup and guardrails ✅ COMPLETE
 
-- Create GitHub repo.
-- Add `.gitignore`.
-- Add `.env.example`.
-- Set up Vite React TypeScript.
-- Set up Tailwind.
-- Set up Firebase project.
-- Configure Firebase Authentication.
-- Create Firestore and Storage security rules.
-- Add Firestore indexes where needed.
-- Add linting and formatting.
-- Add security notes.
-- Add agent rules.
+- [x] Create GitHub repo.
+- [x] Add `.gitignore`.
+- [x] Add `.env.example`.
+- [x] Set up Vite React TypeScript.
+- [x] Set up Tailwind CSS (dark HAL-inspired theme).
+- [x] Set up Firebase project (Spark plan).
+- [x] Configure Firebase Authentication (Email/Password).
+- [x] Create Firestore and Storage security rules.
+- [x] Add Firestore indexes where needed.
+- [x] Add linting (ESLint) and formatting (Prettier).
+- [x] Add security notes.
+- [x] Add agent rules.
+- [x] Branding: Reticle Systems + O.D.I.N. assistant.
 
-### Phase 1 — Landing and intake
+### Phase 1 — Landing and intake ✅ COMPLETE
 
-- Homepage.
-- HAL-style guided intake.
-- Project creation.
-- Save answers.
-- Basic dashboard.
-- Auth.
+- [x] Homepage (HAL-style, auth-aware CTAs).
+- [x] HAL-style guided intake (10-step interactive flow).
+- [x] Project creation (Zustand intake store → storage adapter).
+- [x] Save answers (persisted via localStorage or B2).
+- [x] Basic dashboard (project listing with metadata cards).
+- [x] Auth (Firebase sign-up/login, AuthGuard on routes).
+- [x] Storage adapter architecture (localStorage + B2 S3-compatible).
+- [x] Branding applied throughout UI ("O.D.I.N. checks your project...").
 
-### Phase 2 — Payments
+### Phase 2 — Payments 🔲 NOT STARTED
 
-- Stripe Checkout.
-- Stripe webhook.
-- Credit allocation.
-- Credit consumption.
-- Payment history.
+- [ ] Stripe Checkout.
+- [ ] Stripe webhook.
+- [ ] Credit allocation.
+- [ ] Credit consumption.
+- [ ] Payment history.
 
-### Phase 3 — URL-only audit MVP
+### Phase 3 — URL-only audit MVP 🔲 NOT STARTED
 
-- Fetch website URL.
-- Check HTTPS.
-- Check title/meta.
-- Check headings.
-- Check robots.txt.
-- Check sitemap.xml.
-- Check Open Graph tags.
-- Run Lighthouse if possible.
+- [ ] Fetch website URL.
+- [ ] Check HTTPS.
+- [ ] Check title/meta.
+- [ ] Check headings.
+- [ ] Check robots.txt.
+- [ ] Check sitemap.xml.
+- [ ] Check Open Graph tags.
+- [ ] Run Lighthouse if possible.
 - Store findings.
 - Generate AI report.
 
@@ -1158,12 +1355,16 @@ buildproof/
 - Store redacted findings.
 - Delete raw files after scan.
 
-### Phase 5 — Repair prompts
+### Phase 5 — Repair prompts and verification
 
 - Generate Codex prompts.
 - Generate Lovable/Bolt repair prompts.
 - Generate developer checklist.
 - Add copy buttons.
+- Add "I've fixed it" verification button.
+- Rescan individual findings.
+- Update scores on verified fixes.
+- Show positive reinforcement on improvement.
 
 ### Phase 6 — Growth plan upsell
 
@@ -1182,12 +1383,28 @@ buildproof/
 - SEO regression alerts.
 - Growth opportunities.
 
-### Phase 8 — Idea miner
+### Phase 8 — GitHub migration assistant
+
+- Builder-specific export guides (Lovable, Bolt, Replit, etc.).
+- GitHub Desktop setup walkthrough.
+- Repository creation and commit guidance.
+- Connect Reticle Systems for automatic push-based scanning.
+- Historical score tracking across commits.
+
+### Phase 9 — Idea miner
 
 - Add opportunity discovery dashboard.
 - Use compliant data sources.
 - Add opportunity scoring.
 - Generate build prompts/plans.
+
+### Phase 10 — Reticle Labs
+
+- Publish industry reports.
+- Top AI coding mistakes (monthly).
+- Builder comparison reports.
+- State of AI-built software.
+- Drive organic SEO through authoritative content.
 
 ---
 
@@ -1292,7 +1509,7 @@ Do not build the idea miner around unauthorised scraping. Use compliant APIs, pu
 
 **Build fast. Launch safely.**
 
-AI-built apps can hide serious problems. BuildProof checks your project for security risks, launch blockers, SEO gaps, and growth weaknesses before they become expensive.
+AI-built apps can hide serious problems. O.D.I.N. checks your project for security risks, launch blockers, SEO gaps, and growth weaknesses before they become expensive.
 
 [ Check my project ]
 [ See how it works ]
@@ -1356,7 +1573,7 @@ The app should work as before, but the secret must no longer be exposed to the b
 ## 25. Suggested First Codex Prompt
 
 ```text
-Create the initial Vite + React + TypeScript project for BuildProof.
+Create the initial Vite + React + TypeScript project for Reticle Systems.
 
 Requirements:
 - Use Tailwind CSS.
@@ -1374,8 +1591,24 @@ Requirements:
 
 ---
 
-## 26. Non-Negotiable Principle
+## 26. Non-Negotiable Principles
 
-BuildProof must be safer than the projects it audits.
+### Principle 1: Be safer than the projects you audit
+
+Reticle Systems must be safer than the projects it audits.
 
 If the platform ever exposes keys, bypasses Firebase Security Rules, trusts frontend payment state, stores raw code unnecessarily, or produces unvalidated AI output, it has failed its own core promise.
+
+### Principle 2: Every feature must create better builders
+
+Every feature should answer one question:
+
+> "Does this make someone a better software builder?"
+
+If the answer is no, the feature probably does not belong in Reticle Systems.
+
+The product exists not to scan code, but to educate, guide, and improve the people who build software — whether they are professional developers or first-time founders using AI tools.
+
+### Principle 3: Accuracy over conversions
+
+Never exaggerate findings to drive purchases. Reticle Systems' long-term value depends on trust. When in doubt, understate rather than overstate. Use measured language: "detected a pattern consistent with" rather than definitive claims of vulnerabilities that require human verification.
