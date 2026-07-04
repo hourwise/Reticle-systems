@@ -1,15 +1,10 @@
 import { create } from 'zustand'
-import {
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-  signOut,
-  type User,
-} from 'firebase/auth'
-import { auth } from '@/lib/firebaseClient'
+import { supabase } from '@/lib/supabaseClient'
+import type { User, Session } from '@supabase/supabase-js'
 
 interface AuthState {
   user: User | null
+  session: Session | null
   loading: boolean
   error: string | null
 
@@ -21,40 +16,45 @@ interface AuthState {
 }
 
 // Initialize the auth listener immediately
-onAuthStateChanged(auth, (user) => {
-  useAuthStore.setState({ user, loading: false })
+supabase.auth.onAuthStateChange((_event, session) => {
+  useAuthStore.setState({
+    user: session?.user ?? null,
+    session,
+    loading: false,
+  })
 })
 
 export const useAuthStore = create<AuthState>((set) => ({
   user: null,
+  session: null,
   loading: true,
   error: null,
 
   signUp: async (email: string, password: string) => {
     set({ error: null })
-    try {
-      await createUserWithEmailAndPassword(auth, email, password)
-    } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : 'Failed to create account'
-      set({ error: message })
-      throw err
+    const { error } = await supabase.auth.signUp({ email, password })
+    if (error) {
+      set({ error: error.message })
+      throw error
     }
   },
 
   signIn: async (email: string, password: string) => {
     set({ error: null })
-    try {
-      await signInWithEmailAndPassword(auth, email, password)
-    } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : 'Failed to sign in'
-      set({ error: message })
-      throw err
+    const { error } = await supabase.auth.signInWithPassword({ email, password })
+    if (error) {
+      set({ error: error.message })
+      throw error
     }
   },
 
   logOut: async () => {
     set({ error: null })
-    await signOut(auth)
+    const { error } = await supabase.auth.signOut()
+    if (error) {
+      set({ error: error.message })
+      throw error
+    }
   },
 
   clearError: () => set({ error: null }),

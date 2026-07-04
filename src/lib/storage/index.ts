@@ -1,21 +1,21 @@
 export type { StorageAdapter, StoredProject, StoredReport } from './types'
 export { localStorageAdapter } from './localStorageAdapter'
-export { b2Adapter } from './b2Adapter'
+export { supabaseAdapter } from './supabaseAdapter'
 
 import { localStorageAdapter } from './localStorageAdapter'
-import { b2Adapter } from './b2Adapter'
+import { supabaseAdapter } from './supabaseAdapter'
 import type { StorageAdapter } from './types'
 
 /**
- * Returns the active storage adapter based on environment config.
+ * Returns the active storage adapter.
  *
  * Priority:
- *   1. B2 if VITE_B2_APPLICATION_KEY_ID is set
- *   2. localStorage (always available, default)
+ *   1. Supabase (if VITE_SUPABASE_URL is set)
+ *   2. localStorage (fallback, always available)
  */
 export function getStorageAdapter(): StorageAdapter {
-  if (import.meta.env.VITE_B2_APPLICATION_KEY_ID) {
-    return b2Adapter
+  if (import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY) {
+    return supabaseAdapter
   }
   return localStorageAdapter
 }

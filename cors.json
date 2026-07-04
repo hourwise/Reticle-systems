@@ -1,0 +1,1 @@
+[{"corsRuleName":"vercel","allowedOrigins":["https://reticle-systems.vercel.app"],"allowedHeaders":["*"],"allowedOperations":["s3_head","s3_get","s3_put","s3_delete"],"maxAgeSeconds":3600}]

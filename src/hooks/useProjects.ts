@@ -30,7 +30,7 @@ export function useProjects(): UseProjectsReturn {
     setError(null)
 
     try {
-      const list = await adapter.listProjects(user.uid)
+      const list = await adapter.listProjects(user.id)
       setProjects(list)
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Failed to load projects'
@@ -55,7 +55,7 @@ export function useProjects(): UseProjectsReturn {
 
       const project: StoredProject = {
         id: input.id || crypto.randomUUID(),
-        userId: user.uid,
+        userId: user.id,
         name: input.name,
         websiteUrl: input.websiteUrl,
         builderUsed: input.builderUsed,
