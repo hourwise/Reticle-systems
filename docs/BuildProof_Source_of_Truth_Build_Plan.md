@@ -1296,6 +1296,14 @@ reticle-systems/
 
 ## 18. Build Phases
 
+> **Last updated:** 2026-07-04  
+> **Live URL:** https://reticle-systems.vercel.app  
+> **GitHub:** https://github.com/hourwise/Reticle-systems  
+> **Domain:** reticlesystems.co.uk (awaiting Vercel DNS)  
+> **Emails:** odin@reticlesystems.co.uk / info@ / support@  
+> **Firebase:** Spark plan (Auth enabled, Firestore unavailable)  
+> **Storage:** localStorage (production), B2 S3-compatible (dev, CORS pending)  
+
 ### Phase 0 — Setup and guardrails ✅ COMPLETE
 
 - [x] Create GitHub repo.
@@ -1318,10 +1326,15 @@ reticle-systems/
 - [x] HAL-style guided intake (10-step interactive flow).
 - [x] Project creation (Zustand intake store → storage adapter).
 - [x] Save answers (persisted via localStorage or B2).
-- [x] Basic dashboard (project listing with metadata cards).
+- [x] Basic dashboard (project listing with metadata cards, delete with confirmation).
 - [x] Auth (Firebase sign-up/login, AuthGuard on routes).
 - [x] Storage adapter architecture (localStorage + B2 S3-compatible).
 - [x] Branding applied throughout UI ("O.D.I.N. checks your project...").
+- [x] **Report page** — pre-audit assessment engine, computed scores (0-100), 24 rule-based findings from intake answers, Codex repair prompt copy buttons, O.D.I.N. disclaimer.
+- [x] Vercel SPA rewrite rule (`vercel.json`).
+- [x] Deployed to Vercel: `https://reticle-systems.vercel.app`.
+- [x] Git repo: `https://github.com/hourwise/Reticle-systems`.
+- [x] Domain: `reticlesystems.co.uk` (pending DNS/Vercel domain setup).
 
 ### Phase 2 — Payments 🔲 NOT STARTED
 
@@ -1331,9 +1344,11 @@ reticle-systems/
 - [ ] Credit consumption.
 - [ ] Payment history.
 
-### Phase 3 — URL-only audit MVP 🔲 NOT STARTED
+### Phase 3 — URL-only audit MVP 🟡 CLOUD FUNCTION READY
 
-- [ ] Fetch website URL.
+- [x] Cloud Function written (`firebase/functions/src/index.ts`) — 24 automated checks via Cheerio.
+- [x] Pre-audit engine running on Report page (intake-based findings).
+- [ ] Live URL scanning (requires Blaze plan for Cloud Functions deployment).
 - [ ] Check HTTPS.
 - [ ] Check title/meta.
 - [ ] Check headings.
@@ -1341,23 +1356,26 @@ reticle-systems/
 - [ ] Check sitemap.xml.
 - [ ] Check Open Graph tags.
 - [ ] Run Lighthouse if possible.
-- Store findings.
-- Generate AI report.
+- [ ] Store findings.
+- [ ] Generate AI report.
 
-### Phase 4 — Repo/ZIP scan
+### Phase 4 — Repo/ZIP scan 🔲 NOT STARTED
 
-- Allow ZIP upload or GitHub repo URL.
-- Validate file size/type.
-- Extract in temporary worker directory.
-- Run Gitleaks.
-- Run Semgrep.
-- Run dependency audit.
-- Store redacted findings.
-- Delete raw files after scan.
+- [ ] Allow ZIP upload or GitHub repo URL.
+- [ ] Validate file size/type.
+- [ ] Extract in temporary worker directory.
+- [ ] Run Gitleaks.
+- [ ] Run Semgrep.
+- [ ] Run dependency audit.
+- [ ] Store redacted findings.
+- [ ] Delete raw files after scan.
 
-### Phase 5 — Repair prompts and verification
+### Phase 5 — Repair prompts and verification 🟡 PARTIAL
 
-- Generate Codex prompts.
+- [x] Codex repair prompt generation (per-finding copy buttons on Report page).
+- [x] Plain-English fix explanations (expandable [SHOW FIX] on each finding).
+- [ ] Generate Lovable/Bolt-specific repair prompts.
+- [ ] Generate developer checklist.
 - Generate Lovable/Bolt repair prompts.
 - Generate developer checklist.
 - Add copy buttons.
