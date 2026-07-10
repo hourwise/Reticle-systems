@@ -1,0 +1,74 @@
+# Environment variables - NEVER commit real secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+!.env.example
+
+# Keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Service account files
+service-account*.json
+firebase-service-account*.json
+firebase-adminsdk*.json
+
+# Build outputs
+dist
+build
+
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Testing
+coverage
+.nyc_output
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Vercel
+.vercel
+
+# Deployment
+.vercel/
+.netlify/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# Lock files (optional - include for reproducible builds)
+# package-lock.json
+# yarn.lock
+
+# Firebase
+.firebase
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
